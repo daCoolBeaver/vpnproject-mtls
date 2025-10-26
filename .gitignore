@@ -1,0 +1,13 @@
+# Ignore TLS keys and certs
+src/volumes/keys/
+*.key
+*.csr
+*.srl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Editor configs
+.vscode/
+.idea/

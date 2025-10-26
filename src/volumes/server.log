@@ -1,0 +1,50 @@
+2025-10-26 09:52:21,436 [INFO] Interface Name: tun0
+2025-10-26 09:52:21,444 [INFO] QUIC VPN server established on IP 10.9.0.11 and port 4433
+2025-10-26 09:53:03,473 [INFO] [45d42bc7c9a24496] Negotiated protocol version 0x00000001 (VERSION_1)
+2025-10-26 09:53:03,477 [INFO] [45d42bc7c9a24496] ALPN negotiated protocol None
+2025-10-26 09:53:03,478 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:53:03,478 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:53:03,478 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:53:03,479 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:53:03,479 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:53:07,470 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:53:15,219 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:53:18,813 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:53:30,061 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:53:58,736 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:54:21,771 [INFO] From tun ==>: 0.0.0.0 --> 56.31.145.199
+2025-10-26 09:54:58,640 [INFO] From client <==: 0.0.0.0 --> 92.87.112.132
+2025-10-26 09:55:58,670 [ERROR] [recv_from_client] Exception: 0 bytes read on a total of 2 expected bytes
+Traceback (most recent call last):
+  File "/volumes/server/QUIC_server.py", line 40, in recv_from_client
+    length_bytes = await self.reader.readexactly(2) # Read exactly 2 bytes.
+  File "/usr/lib/python3.9/asyncio/streams.py", line 721, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
+2025-10-26 10:06:32,731 [INFO] Interface Name: tun0
+2025-10-26 10:06:32,746 [INFO] QUIC VPN server established on IP 10.9.0.11 and port 4433
+2025-10-26 10:06:39,991 [INFO] [10d38bc1e47024df] Negotiated protocol version 0x00000001 (VERSION_1)
+2025-10-26 10:06:39,994 [INFO] [10d38bc1e47024df] ALPN negotiated protocol None
+2025-10-26 10:06:39,996 [INFO] From client <==: 0.0.0.0 --> 100.144.14.238
+2025-10-26 10:06:39,996 [INFO] From tun ==>: 0.0.0.0 --> 76.125.44.125
+2025-10-26 10:06:39,997 [INFO] From tun ==>: 0.0.0.0 --> 76.125.44.125
+2025-10-26 10:06:44,174 [INFO] From client <==: 0.0.0.0 --> 100.144.14.238
+2025-10-26 10:06:45,710 [INFO] From tun ==>: 0.0.0.0 --> 76.125.44.125
+2025-10-26 10:06:49,202 [INFO] From client <==: 192.168.53.99 --> 192.168.60.7
+2025-10-26 10:06:49,203 [INFO] From tun ==>: 192.168.60.7 --> 192.168.53.99
+2025-10-26 10:06:50,210 [INFO] From client <==: 192.168.53.99 --> 192.168.60.7
+2025-10-26 10:06:50,211 [INFO] From tun ==>: 192.168.60.7 --> 192.168.53.99
+2025-10-26 10:06:51,210 [INFO] From client <==: 192.168.53.99 --> 192.168.60.7
+2025-10-26 10:06:51,211 [INFO] From tun ==>: 192.168.60.7 --> 192.168.53.99
+2025-10-26 10:06:52,883 [INFO] From client <==: 0.0.0.0 --> 100.144.14.238
+2025-10-26 10:07:02,604 [INFO] From tun ==>: 0.0.0.0 --> 76.125.44.125
+2025-10-26 10:07:09,783 [INFO] From client <==: 0.0.0.0 --> 100.144.14.238
+2025-10-26 10:07:40,496 [INFO] From tun ==>: 0.0.0.0 --> 76.125.44.125
+2025-10-26 10:07:44,591 [INFO] From client <==: 0.0.0.0 --> 100.144.14.238
+2025-10-26 10:08:44,617 [ERROR] [recv_from_client] Exception: 0 bytes read on a total of 2 expected bytes
+Traceback (most recent call last):
+  File "/volumes/server/QUIC_server.py", line 40, in recv_from_client
+    length_bytes = await self.reader.readexactly(2) # Read exactly 2 bytes.
+  File "/usr/lib/python3.9/asyncio/streams.py", line 721, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 2 expected bytes
