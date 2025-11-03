@@ -32,17 +32,10 @@ src/keys/tls/client → client.crt, client.key
 
 
 ### 1. Start Docker containers
-```bash
-docker compose up --build
 
-Start the server
-
-docker exec -it server-router bash -lc 'PYTHONPATH=/volumes PYTHONUNBUFFERED=1 PORT=5460 python3 -u /volumes/server/mtls_quic_server.py'
-
-
-Start the client
-
-docker exec -it client-10.9.0.5 bash -lc 'PYTHONPATH=/volumes PYTHONUNBUFFERED=1 PORT=5460 CLIENT_CERT=/volumes/keys/tls/client/client.crt CLIENT_KEY=/volumes/keys/tls/client/client.key CA_CERT=/volumes/keys/tls/ca/ca.crt python3 -u /volumes/client/mtls_quic_client.py'
+docker compose up -d --build
+docker exec -it server-router bash -lc 'PYTHONPATH=/volumes python3 -u /volumes/server/mtls_quic_server.py'
+docker exec -it client-10.9.0.5 bash -lc 'PYTHONPATH=/volumes python3 -u /volumes/client/mtls_quic_client.py'
 
 
 Expected output
